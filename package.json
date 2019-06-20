@@ -1,0 +1,39 @@
+{
+  "name": "es6-grobot-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test babel-node ./node_modules/.bin/_mocha test --recursive",
+    "dev": "nodemon --exec babel-node --extensions \".ts,.js\" src/index.js",
+    "babel-version": "babel --version",
+    "build": "rimraf build && babel src -d build --copy-files"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-stage-0": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/glob": "^7.1.1",
+    "@types/lodash": "^4.14.134",
+    "@types/mongoose": "^5.5.6",
+    "apollo-server": "^2.6.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "graphql": "^14.3.1",
+    "ioredis": "^4.9.0",
+    "mongoose": "^5.6.0"
+  }
+}
